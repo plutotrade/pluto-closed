@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>PlutoTrade</title>
-  <link rel="stylesheet" href="https://plutotrade.io/styles.css">
+  <link rel="stylesheet" href="https://plutotrade.io/styles.css" />
   <style>
     html,
     body {
@@ -20,8 +20,34 @@
 </head>
 
 <body>
-<!--   <img src="https://raw.githubusercontent.com/plutotrade/pluto-closed/master/close1.jpg" alt="" class="closeNotice"> -->
-  <img src="https://raw.githubusercontent.com/plutotrade/pluto-closed/master/close2.jpg" alt="" class="closeNotice">
+  <img src="https://raw.githubusercontent.com/plutotrade/pluto-closed/master/index-image.png" alt="" class="indexImage" />
+  <div class="modal-bg tempClose">
+    <div class="tempContainer" id="close1">
+      <div class="modal-head">
+        <h4></h4>
+        <div class="close-btn" onclick="closeModal('close1')"><img src="../images/ic_modalClose.svg" alt=""></div>
+      </div>
+      <div class="modal-simple">
+        <img src="https://raw.githubusercontent.com/plutotrade/pluto-closed/master/close1.jpg" alt="" class="closeNotice">
+      </div>
+    </div>
+    <div class="tempContainer" id="close2">
+      <div class="modal-head">
+        <h4></h4>
+        <div class="close-btn" onclick="closeModal('close2')"><img src="../images/ic_modalClose.svg" alt=""></div>
+      </div>
+      <div class="modal-simple">
+        <img src="https://raw.githubusercontent.com/plutotrade/pluto-closed/master/close2.jpg" alt="" class="closeNotice">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function closeModal(id) {
+      const tags = document.getElementById(id);
+      tags.style.display = 'none';
+    }
+  </script>
 </body>
 
 </html>
