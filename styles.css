@@ -56,13 +56,13 @@ html {
   box-sizing: inherit; }
 
 body {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   background-color: #edeef4; }
   @media screen and (max-width: 1024px) {
     body {
       min-width: 100%; } }
   body.trade {
-    background: #101C31; }
+    background: #101c31; }
 
 button {
   border: none;
@@ -714,7 +714,20 @@ label {
   left: 0;
   width: 100%;
   height: 100%;
+  overflow-y: auto;
   background: rgba(10, 28, 58, 0.4); }
+  .modal-bg.tempClose {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
 
 .modal-container {
   position: fixed;
@@ -733,6 +746,18 @@ label {
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.05); }
   .modal-container.trade-confirm {
     width: 1000px; }
+
+.tempContainer {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 600px;
+  flex: 0 600px;
+  padding: 20px;
+  overflow: auto;
+  background: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.05);
+  margin: 10px; }
 
 .modal-head {
   display: -webkit-box;
@@ -2429,7 +2454,7 @@ header {
             font-weight: bold; }
           .flexContainer article.mypage-article .mypage-mobile-table td .kyc-status {
             float: right;
-            color: #A3A3A3;
+            color: #a3a3a3;
             font-size: 12px; }
     .flexContainer article.trade {
       padding: 25px 0 25px 0;
@@ -2557,7 +2582,7 @@ footer {
     text-align: center;
     font-size: 12px; }
     .panel .bottom .warning {
-      color: #D0021B; }
+      color: #d0021b; }
   .panel .panel-title {
     font-size: 16px;
     font-weight: bold;
@@ -2676,7 +2701,7 @@ footer {
     margin-top: 5px; }
     .input-container .small-print.error {
       margin-bottom: 0;
-      color: #D0021B; }
+      color: #d0021b; }
   .input-container .required {
     font-size: 11px;
     font-weight: bold;
@@ -2725,7 +2750,7 @@ footer {
   height: 30px; }
 
 .light-footer {
-  color: #8FA0D1;
+  color: #8fa0d1;
   font-size: 12px;
   padding-top: 26px; }
   @media screen and (max-width: 1024px) {
@@ -2738,21 +2763,21 @@ footer {
   width: 100%;
   outline: none;
   padding: 13px;
-  border: 1px solid #D8DDE6; }
+  border: 1px solid #d8dde6; }
   .textarea:focus {
     border: 1px solid #1a8fff; }
   .textarea::-webkit-input-placeholder {
     font-size: 13px;
-    color: #65759F; }
+    color: #65759f; }
   .textarea:-ms-input-placeholder {
     font-size: 13px;
-    color: #65759F; }
+    color: #65759f; }
   .textarea::-ms-input-placeholder {
     font-size: 13px;
-    color: #65759F; }
+    color: #65759f; }
   .textarea::placeholder {
     font-size: 13px;
-    color: #65759F; }
+    color: #65759f; }
   .textarea.admin::-webkit-input-placeholder {
     font-size: 13px;
     color: #a3a3a3; }
@@ -3223,16 +3248,16 @@ footer {
 
 hr {
   border: none;
-  background: #D9DDE6;
+  background: #d9dde6;
   height: 1px;
   margin-bottom: 30px; }
 
 .cancel-member {
   font-size: 12px;
-  color: #A3A3A3;
+  color: #a3a3a3;
   margin-right: 10px; }
   .cancel-member:visited {
-    color: #A3A3A3; }
+    color: #a3a3a3; }
   .cancel-member:hover {
     color: #1a8fff; }
 
@@ -4024,27 +4049,27 @@ hr {
 .error-panel {
   max-width: 1000px;
   margin: 0 auto;
-  background: #FFFFFF;
-  -webkit-box-shadow: -3px 8px 22px #DFE2EF;
-  box-shadow: -3px 8px 22px #DFE2EF;
+  background: #ffffff;
+  -webkit-box-shadow: -3px 8px 22px #dfe2ef;
+  box-shadow: -3px 8px 22px #dfe2ef;
   border-radius: 0 0 4px 4px;
   text-align: center;
   padding: 60px 0; }
   .error-panel .error-number {
     font-size: 60px;
     font-weight: bold;
-    color: #8FA0D1;
+    color: #8fa0d1;
     margin-bottom: 30px; }
   .error-panel .sub-heading {
     font-size: 18px;
-    color: #6C6C6C;
+    color: #6c6c6c;
     margin-bottom: 20px; }
   .error-panel .error-message {
     font-size: 16px;
     line-height: 1.5em;
-    color: #6C6C6C; }
+    color: #6c6c6c; }
   .error-panel hr {
-    background: #E8EAF4;
+    background: #e8eaf4;
     height: 1px;
     border: none;
     width: 400px;
@@ -4099,3 +4124,6 @@ hr {
   margin: 0 auto;
   width: 100%;
   max-width: 600px; }
+
+.indexImage {
+  width: 100%; }
