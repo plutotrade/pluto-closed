@@ -21,7 +21,7 @@
 
 <body>
   <img src="https://raw.githubusercontent.com/plutotrade/pluto-closed/master/index-image.png" alt="" class="indexImage" />
-  <div class="modal-bg tempClose" id="close-main">
+<!--   <div class="modal-bg tempClose" id="close-main">
     <div class="tempContainer" id="close1">
       <div class="modal-head">
         <h4></h4>
@@ -40,23 +40,23 @@
         <img src="https://raw.githubusercontent.com/plutotrade/pluto-closed/master/close2.jpg" alt="" class="closeNotice">
       </div>
     </div>
-  </div>
+  </div> -->
 
   <script>
-    let isOneClosed = false;
-    let isTwoClosed = false;
-    function closeModal(id) {
-      const tags = document.getElementById(id);
-      tags.style.display = 'none';
-      if (id === "close1") {
-        isOneClosed = true;
-      } else {
-        isTwoClosed = true;
-      }
-      if (isOneClosed && isTwoClosed) {
-        document.getElementById("close-main").style.display = 'none';
-      }
-    }
+//     let isOneClosed = false;
+//     let isTwoClosed = false;
+//     function closeModal(id) {
+//       const tags = document.getElementById(id);
+//       tags.style.display = 'none';
+//       if (id === "close1") {
+//         isOneClosed = true;
+//       } else {
+//         isTwoClosed = true;
+//       }
+//       if (isOneClosed && isTwoClosed) {
+//         document.getElementById("close-main").style.display = 'none';
+//       }
+//     }
   </script>
 </body>
 
